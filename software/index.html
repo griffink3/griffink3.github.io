@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<title>GK Software</title>
+<link rel="icon" href="http://107.20.213.245/img/favicon.png?" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.png?" typ="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('img/image1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('img/image2.jpg');
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url('img/image3.jpg');
+    min-height: 400px;
+}
+
+.bgimg-5 {
+    background-image: url('img/image5.jpg');
+}
+
+/* The Revive Logo */
+.logo {
+    background-image: url('img/logo.jpg')
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../index.html" class="w3-bar-item w3-button" style="color: white;">LANDING PAGE</a>
+    <a href="#about" class="w3-bar-item w3-button" style="color: white;">ABOUT</a>
+    <!-- <a href="#expertise" class="w3-bar-item w3-button w3-hide-small" style="color: white;"><i class="fa fa-user"></i> EXPERTISE</a> -->
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small" style="color: white;"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <!-- <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="color: white;"><i class="fa fa-envelope"></i> CONTACT</a> -->
+    <!-- <a href="https://www.revivetech.live" class="w3-bar-item w3-button" style="color: white;">REVIVE TECH</a> -->
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <!-- <a href="#expertise" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERTISE</a> -->
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <!-- <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a> -->
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GK SOFTWARE</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">MY MISSION</h3>
+  <p class="w3-center"><em>Simple software and design solutions.</em></p>
+  <p class="w3-center">Hi! My name is Griffin Kao. I'm a software developer and product manager a background in computer science, 
+    mechanical engineering, and economics at Brown University. I love creating solutions that leverage intuitive user interfaces
+    to engage users in uniquely functional backends. Check out some of the things I've built here!
+  </p>
+
+      <!-- <p>We’re defining a new, more real type of consulting that focuses on tangible solutions in the form of pieces of software, websites, graphics, or improved metrics.
+          Our clientele include small businesses and enterprising individuals because we believe knowledge shouldn’t be exclusively available to big corporations.
+          Beginning with a stronger focus on the details, we work with you from start to finish on the implementation of effective fixes. Nothing
+          concerns us more than our relationship with you the client, and because we’re a smaller firm, we can deliver quantifiably better, more
+          personalized results.</p> -->
+  <!-- <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Founding Partner, Griffin Kao</b></p><br>
+      <img src="img/griffin.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div> -->
+
+    <!-- Hide this text on small devices -->
+    <!-- <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <h3 class="w3-center">WHAT WE OFFER</h3>
+      <p>We’re in the business of disseminating knowledge by providing strategic consulting. However more microscopically,
+          in the application of our solutions, Revive Brand Management deals with designing and building websites, web/iOS applications, and
+          smaller pieces of software. We also have a passion for client acquisition through social media marketing and brand development in
+          order to foster the growth of any small or up-and-coming businesses.</p>
+      <p>For clients that want less involved service, we can mock up a fully-functioning website for you or an interactive wireframe for your
+          app within 48 hours, and then build it out at affordable rates.</p>
+      <p>We also offer a free consultation to address web, logo and business concerns. In consultation, we perform a complimentary SWOT (strengths,
+          weaknesses, opportunities, threats) analysis for potential clients.</p>
+    </div>
+  </div> -->
+  <div class="w3-padding-16"></div>
+
+<!--
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+-->
+</div>
+<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">5+</span><br>
+    Services
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">25+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">10+</span><br>
+    Satisfied Customers
+  </div>
+</div> -->
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <!-- <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span> -->
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+  <h3 class="w3-center">PORTFOLIO</h3>
+  <p class="w3-center"><em>Here are some of the projects I've completed.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center w3-section">
+
+      <div class="w3-col m3">
+          <a href="https://www.brownangelgroup.org/" target="_blank">
+              <img src="img/bag.png" style="width:100%" class="w3-hover-opacity" alt="ReviveTech">
+          </a>
+      </div>
+   
+      <div class="w3-col m3">
+          <a href="https://resvip-site.web.app/" target="_blank">
+              <img src="img/resvip.jpg" style="width:100%" class="w3-hover-opacity" alt="ReviveTech">
+          </a>
+      </div>
+
+      <div class="w3-col m3">
+          <a href="https://github.com/griffink3/Doople" target="_blank">
+              <img src="img/doople.png" style="width:100%" class="w3-hover-opacity" alt="ReviveTech">
+          </a>
+      </div>
+
+      <div class="w3-col m3">
+          <a href="../writing/index.html" target="_blank">
+              <img src="img/gkwriting.png" style="width:100%" class="w3-hover-opacity" alt="ReviveTech">
+          </a>
+      </div>
+  
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+          <a href="https://www.stackhacktutoring.com" target="_blank">
+              <img src="img/StackHack/icon.png" style="width:100%" class="w3-hover-opacity" alt="StackHack">
+          </a>
+      </div>
+
+    <div class="w3-col m3">
+      <a href="Moodey.html">
+        <img src="img/Moodie/moodie-icon.png" style="width:100%" class="w3-hover-opacity" alt="Moodie">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="SGD.html">
+        <img src="img/SGD/front.png" style="width:100%" class="w3-hover-opacity" alt="Stuff Going Down">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://appadvice.com/app/grade-calculator-gc/1387053380" target="_blank">
+        <img src="img/GradeCalculator/icon.png" style="width:100%" class="w3-hover-opacity" alt="Grade Calculator">
+      </a>
+    </div>
+
+    
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <a href="https://brownthink.wordpress.com/" target="_blank">
+        <img src="img/BrownThink/logo.png" style="width:100%" class="w3-hover-opacity" alt="BrownThink">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://appadvice.com/app/options-ranker/1387351624" target="_blank">
+        <img src="img/OptionsRanker/icon.png" style="width:100%" class="w3-hover-opacity" alt="Options Ranker">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://lmfrisbeefriends.wixsite.com/frisbeefriends" target="_blank">
+        <img src="img/FrisbeeFriends/icon.png" style="width:100%" class="w3-hover-opacity" alt="Frisbee Friends">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://nataliefeinstein.wordpress.com/" target="_blank">
+        <img src="img/NatalieFeinstein/icon.png" style="width:100%" class="w3-hover-opacity" alt="Natalie Feinstein">
+      </a>
+    </div>
+
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+          <a href="https://smcleaners.wordpress.com/" target="_blank">
+            <img src="img/SM/icon.png" style="width:100%" class="w3-hover-opacity" alt="SM Cleaners">
+          </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="AFD.html">
+        <img src="img/AFD/Logo1.png" style="width:100%" class="w3-hover-opacity" alt="Auntie For A Day">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://narberthshiatsu.wordpress.com/" target="_blank">
+        <img src="img/Howland/icon.jpg" style="width:100%" class="w3-hover-opacity" alt="Howland Shiatsu">
+      </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://sweethandsofcare.wordpress.com/" target="_blank">
+        <img src="img/SweetHands/icon.png" style="width:100%" class="w3-hover-opacity" alt="Sweet Hands of Care">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <!-- <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
+  </div> -->
+</div>
+
+<!-- Container (Contact Section) -->
+<!-- <div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">LET'S CHAT</h3>
+  <p class="w3-center"><em>We would love to hear from you! Contact us with any of your design, marketing, and consulting needs.</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="img/image4.jpg" class="w3-round w3-image" alt="img4">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <div class="w3-padding-32"></div>
+        <div class="w3-padding-16"></div>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Philadelphia, PA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 610-909-6640<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: revivebrandmanagement@gmail.com<br>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/Revive-Brand-Management-455964278123975/" target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/company/revive-brand-management/" target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
+  </div>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
