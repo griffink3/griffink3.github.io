@@ -55,6 +55,8 @@ p a:hover {
   vertical-align: middle;
 }
 
+
+
 /* =======================================================
 *
 * 	Template Style 
@@ -143,6 +145,19 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .container-wrap {
     width: 100%;
+  }
+
+  .griffin-header {
+    min-width: 300px !important;
+  }
+
+  .work {
+    background:  linear-gradient(#bde3ff, rgba(0,0,0,0.1)) !important;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .work h3 {
+    text-decoration: underline;
   }
 }
 
