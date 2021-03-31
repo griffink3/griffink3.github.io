@@ -38,7 +38,7 @@ p a:hover {
 }
 
 .work-history  {
-  min-height: 500px !important;
+  min-height: 600px !important;
 }
 
 .project-history  {
@@ -55,7 +55,19 @@ p a:hover {
   vertical-align: middle;
 }
 
+.left-align {
+  text-align: left;
+}
 
+.projects p {
+  margin-bottom: 20px;
+}
+.projects a {
+  font-weight:bold;
+}
+.work-list a {
+  font-weight:bold;
+}
 
 /* =======================================================
 *
@@ -108,10 +120,6 @@ a:hover, a:active, a:focus {
   color: #174a00;
   outline: none;
   text-decoration: none;
-}
-
-p {
-  margin-bottom: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
@@ -1022,10 +1030,10 @@ input[type="text"] {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 1.5em;
 }
 .fh5co-heading.fh5co-heading-sm {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .fh5co-heading h2 {
   font-size: 13px;
