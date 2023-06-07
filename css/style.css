@@ -38,11 +38,15 @@ p a:hover {
 }
 
 .work-history  {
-  min-height: 600px !important;
+  min-height: 650px !important;
 }
 
 .project-history  {
-  min-height: 600px !important;
+  min-height: 550px !important;
+}
+
+.investment-history  {
+  min-height: 350px !important;
 }
 
 .anti-history  {
